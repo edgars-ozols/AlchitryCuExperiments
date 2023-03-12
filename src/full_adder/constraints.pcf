@@ -1,0 +1,31 @@
+# Clock
+set_io clk P7
+
+# Onboard LEDs
+set_io led_board[0] J11
+set_io led_board[1] K11
+set_io led_board[2] K12
+set_io led_board[3] K14
+set_io led_board[4] L12
+set_io led_board[5] L14
+set_io led_board[6] M12
+set_io led_board[7] N14
+
+set_io led[0] M1 #A2
+set_io led[1] J1 #A5
+set_io led[2] G1 #A8
+set_io led[3] E1 #A11
+set_io led[4] C1 #A14
+
+set_io -pullup yes btn[4] H12 #B23
+set_io -pullup yes btn[3] F14 #B20
+set_io -pullup yes btn[2] E14 #B17
+set_io -pullup yes btn[1] C14 #B14
+set_io -pullup yes btn[0] A12 #B11
+
+
+set_io usb_rx P14 # tx in the schematic
+set_io usb_tx M9  # rx in the schematic
+
+# Reset
+set_io reset P8
